@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+  <h1>Formulário</h1>
+    <form action="cadastro.js" method="post">
+    <fieldset>
+      <legend>Meus dados</legend>
+        <div>
+        <p>Nome: <input type="text" name="Nome:" id="inome"></p>
+       <p>Endereço: <input type="text" name="Endereço" id="iendereço"></p>
+       <p>Cidade: <input type="text" name="Cidade" id="icidade"></p>
+       <p>Estado:<select name="Estado" id="iestado">
+        <option value="AC">Acre</option>
+        <option value="AL">Alagoas</option>
+        <option value="AP">Amapá</option>
+        <option value="AM">Amazonas</option>
+        <option value="BA">Bahia</option>
+        <option value="CE">Ceará</option>
+        <option value="DF">Distrito Federal</option>
+        <option value="ES">Espirito Santo</option>
+        <option value="GO">Goiás</option>
+        <option value="MA">Maranhão</option>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="MG">Minas Gerais</option>
+        <option value="PA">Pará</option>
+        <option value="PB">Paraíba</option>
+        <option value="PR">Paraná</option>
+        <option value="PE">Pernambuco</option>
+        <option value="PI">Piauí</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="RN">Rio Grande do Norte</option>
+        <option value="RS">Rio Grande do Sul</option>
+        <option value="RO">Rondônia</option>
+        <option value="RR">Roraima</option>
+        <option value="SC">Santa Catarina</option>
+        <option value="SP">São Paulo</option>
+        <option value="SE">Sergipe</option>
+        <option value="TO">Tocantins</option>
+       </select>
+         <br> 
+      </div>
+    </fieldset>
+    <br>
+    <fieldset>
+      <div>
+      <legend>Dados profissionais:</legend>
+      <p>Natureza do Cargo:</p>
+      <input type="radio" name="cargo" id="icargo"> Gerência
+      <input type="radio" name="cargo" id="icargo"> Financeiro 
+      <input type="radio" name="cargo" id="icargo"> Recepção
+      <input type="radio" name="cargo" id="icargo"> Administrativo 
+      <input type="radio" name="cargo" id="icargo"> Juridico
+      
+      <p>Área de interesse: </p>
+      <input type="checkbox" name="interesse" id="interesse"> Computação
+      <input type="checkbox" name="interesse" id="interesse"> Biologia
+      <input type="checkbox" name="interesse" id="interesse"> Meio Ambiente
+      <input type="checkbox" name="interesse" id="interesse"> Engenharia
+      <input type="checkbox" name="interesse" id="interesse"> História
+
+      <p>Mini-Currículo:</p> 
+         <textarea name="curriculo" id="" cols="50" rows="10"></textarea>
+    </div>
+    </fieldset>
+    <input type="submit" value="Enviar"> <input type="reset" value="Apagar">
+  </form>
+</body>
+</html>
